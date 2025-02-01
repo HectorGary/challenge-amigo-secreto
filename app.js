@@ -18,7 +18,7 @@ function agregarAmigo(){
     } 
     limpiarInput();
    // console.log(nombreAmigos.length());
-    //console.log(listaNombreAmigos);
+    console.log(listaNombreAmigos);
 }
 
 // Verifico si se presiona la tecla Enter 
