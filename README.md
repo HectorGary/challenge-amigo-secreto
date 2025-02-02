@@ -1,7 +1,7 @@
 # challenge-amigo-secreto ![alt text](image-1.png)
 Challenge 1: Lógica de programación con JavaScript para el curso ONE (Oracle Next Education) en Alura
 
-Descripción de su proyecto: 
+<h2>Descripción de su proyecto: </h2>
 
 Este es un proyecto del curso ONE (Oracle Next Education) impartido en la plataforma Alura. El proyecto corresponde al primer challenge logica de programacion y se basa en capturar una lista de nombres de amigos y luego sortear, de forma aleatoria, el nombre de un amigo de la lista, quien será seleccionado como el "amigo secreto".
 
