@@ -8,10 +8,10 @@ let lista = document.getElementById('listaAmigos');
 function agregarAmigo() {
     if (document.getElementById('amigo').value == "" || listaNombreAmigos.includes(document.getElementById('amigo').value)) {
         if (document.getElementById('amigo').value == "") {
-            alerta("Por favor, inserte un nombre.");
+            alert("Por favor, inserte un nombre.");
         }
         if (listaNombreAmigos.includes(document.getElementById('amigo').value)) {
-            alerta(`No puedes agregar de nuevo a ${document.getElementById('amigo').value}, ya lo agregaste antes`);
+            alert(`No puedes agregar de nuevo a ${document.getElementById('amigo').value}, ya lo agregaste antes`);
         }
     } else {
         listaNombreAmigos.push(document.getElementById('amigo').value);
@@ -24,18 +24,12 @@ function agregarAmigo() {
     return;
 }
 
-
 // Verifico si se presiona la tecla Enter ya que es mas facil que darle al boton para agregar
 document.getElementById('amigo').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         agregarAmigo();
     }
 });
-
-//Esta funcion mostrara mensajes de alerta segun se requieran.
-function alerta(mensaje) {
-    alert(mensaje);
-}
 
 //Esta funcion creara la lista de amigos que se han introduccido.
 function listarNombres() {
@@ -68,7 +62,7 @@ function sortearAmigo() {
         li.textContent = listaNombreAmigos[numeroAleatorio];
         lista.appendChild(li);
     } else {
-        alerta("Primero deves agregar algunos amigos a la lista");
+        alert("Primero deves agregar algunos amigos a la lista");
     }
     //console.log(longitudArray);
     //console.log(numeroAleatorio);
