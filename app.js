@@ -20,7 +20,8 @@ function agregarAmigo() {
     }
     document.querySelector('#amigo').value = "";
     
-    console.log(listaNombreAmigos);
+    //console.log(listaNombreAmigos);
+    return;
 }
 
 
@@ -48,7 +49,7 @@ function listarNombres() {
         li.textContent = listaNombreAmigos[i];  // Asignar el nombre del amigo al <li>
         lista.appendChild(li);  // esto para agregar  el <li> a la lista <ul>
     }
-
+    return;
 }
 
 //Esta es la funcion para sortear el amigo secreto
@@ -69,8 +70,8 @@ function sortearAmigo() {
     } else {
         alerta("Primero deves agregar algunos amigos a la lista");
     }
-    console.log(longitudArray);
-    console.log(numeroAleatorio);
+    //console.log(longitudArray);
+    //console.log(numeroAleatorio);
     return;
 }
 
