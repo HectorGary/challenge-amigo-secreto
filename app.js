@@ -2,11 +2,12 @@
 // Aquí deberás desarrollar la lógica para resolver el problema.
 
 let listaNombreAmigos = [];
+
 // Esta funcion es para capturar y agregar el nombre del nuevo amigo.
 function agregarAmigo(){
     if(document.getElementById('amigo').value == "" || listaNombreAmigos.includes(document.getElementById('amigo').value)){
         if(document.getElementById('amigo').value == ""){
-            alerta("El nombre no es valido, el campo esta vacio");
+            alerta("Por favor, inserte un nombre.");
         }
         if(listaNombreAmigos.includes(document.getElementById('amigo').value)){
             alerta(`No puedes agregar de nuevo a ${document.getElementById('amigo').value}, ya lo agregaste antes`);
@@ -14,7 +15,7 @@ function agregarAmigo(){
     } else{
         listaNombreAmigos.push(document.getElementById('amigo').value);    
         document.createElement('li', document.getElementById('amigo').value);
-        mostralnombres('listaAmigos', document.getElementById('amigo').value);
+        listarNombres('listaAmigos', document.getElementById('amigo').value);
     } 
     limpiarInput();
    // console.log(nombreAmigos.length());
@@ -34,14 +35,26 @@ function alerta(mensaje){
 }
 
 function sortearAmigo(){
+    let longitudArray = listaNombreAmigos.length;
+    let numeroAleatorio = 0;
 
+    if(listaNombreAmigos.length != 0){
+        numeroAleatorio = Math.floor(Math.random()*longitudArray)+1;
+        
+        listarNombres('listaAmigos', listaNombreAmigos[numeroAleatorio-1]); 
+    }else{
+        alerta("Primero deves agregar algunos amigos a la lista");
+    }
+    console.log(longitudArray);
+    console.log(numeroAleatorio);
+    return;
 }
 
 function limpiarInput(){
     document.querySelector('#amigo').value = "";
 }
 
-function mostralnombres(elemento, texto) {
+function listarNombres(elemento, texto) {
     let elementoHTML = document.querySelector(`#${elemento}`);
     elementoHTML.innerHTML = texto;
     return;
