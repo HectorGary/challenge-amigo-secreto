@@ -1,4 +1,4 @@
-# challenge-amigo-secreto ![alt text](image.png)
+# challenge-amigo-secreto ![alt text](image-1.png)
 Challenge 1: Lógica de programación con JavaScript para el curso ONE (Oracle Next Education) en Alura
 
 Descripción de su proyecto: 
