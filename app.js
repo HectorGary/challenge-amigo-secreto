@@ -56,7 +56,7 @@ function listarNombres() {
 function sortearAmigo() {
     let longitudArray = listaNombreAmigos.length;
     let numeroAleatorio = 0;
-    let lista = document.getElementById('listaAmigos');
+    let lista = document.getElementById('resultado');
 
     if (listaNombreAmigos.length != 0) {
         numeroAleatorio = Math.floor(Math.random() * longitudArray);
@@ -74,7 +74,3 @@ function sortearAmigo() {
     //console.log(numeroAleatorio);
     return;
 }
-
-
-
-
