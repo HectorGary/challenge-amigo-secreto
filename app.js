@@ -1,5 +1,9 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. 
 // Aquí deberás desarrollar la lógica para resolver el problema.
+/**
+ * Autor: Hector Gary Moquete Alcantara
+ * Fecha fecha de conclusion: 02-02-2025
+ */
 
 let listaNombreAmigos = [];
 let lista = document.getElementById('listaAmigos');
