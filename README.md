@@ -1,4 +1,4 @@
-# challenge-amigo-secreto ![alt text](image-1.png)
+# challenge-amigo-secreto ![Este es un ejemplo de como funciona la app](ejemplo-de-uso-de-la-App.gif)
 Challenge 1: Lógica de programación con JavaScript para el curso ONE (Oracle Next Education) en Alura
 
 <h2>Descripción de su proyecto: </h2>
