@@ -24,13 +24,6 @@ function agregarAmigo() {
     return;
 }
 
-// Verifico si se presiona la tecla Enter ya que es mas facil que darle al boton para agregar
-document.getElementById('amigo').addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        agregarAmigo();
-    }
-});
-
 //Esta funcion creara la lista de amigos que se han introduccido.
 function listarNombres() {
     let lista = document.getElementById('listaAmigos');
@@ -59,7 +52,7 @@ function sortearAmigo() {
         //listarNombres(listaNombreAmigos[numeroAleatorio]);
 
         let li = document.createElement('li');
-        li.textContent = listaNombreAmigos[numeroAleatorio];
+        li.textContent = `El amigo secreto es: ${listaNombreAmigos[numeroAleatorio]}`;
         lista.appendChild(li);
     } else {
         alert("Primero deves agregar algunos amigos a la lista");
@@ -68,3 +61,10 @@ function sortearAmigo() {
     //console.log(numeroAleatorio);
     return;
 }
+
+// Verifico si se presiona la tecla Enter ya que es mas facil que darle al boton para agregar
+document.getElementById('amigo').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        agregarAmigo();
+    }
+});
